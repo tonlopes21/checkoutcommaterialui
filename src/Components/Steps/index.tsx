@@ -32,7 +32,7 @@ export function Steps (){
               <StepLabel>Pagamento</StepLabel>
               </Step>
             </Stepper>         
-            <Products/>
+            
             {currentStep === 0 && <Products/>} 
             {currentStep === 1 && <Delivery/>}
             {currentStep === 2 && <Payment/>}
@@ -45,10 +45,8 @@ export function Steps (){
                 <Button onClick={next}>Próximo</Button>
                 </>
                 
-                )}     
+                )}   
             
-
-
 
         </Box>
     )
